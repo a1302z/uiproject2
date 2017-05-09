@@ -2,9 +2,84 @@
 
 \pagebreak
 \section{Model}
-
 \subsection{Overview}
+Persons that most likely will use the website
+\begin{itemize}
+	\item Current students
+	\item Potential students
+	\item Industry partners
+\end{itemize}
 
-\subsection{Personas}
+\begin{center}
+	
+\begin{scaletikzpicturetowidth}{\textwidth}
+	\begin{tikzpicture}[scale=\tikzscale,
+	level distance=5cm]
+	
+	\Tree[.{Most likely users of website}  
+	\edge node{} ; [.{Current students}  
+		\edge node{} ; [.{Personae 1} 
+			\edge node{} ; [.{Scenario 1} ] 
+			\edge node{} ; [.{Scenario 2} ] 
+			\edge node{} ; [.{Scenario 3} ] 
+			 ] ] 
+	\edge node{}; [.{Potential students}    
+		\edge node{} ; [.{Personae 2} 
+			\edge node{} ; [.{Scenario 1} ] 
+			\edge node{} ; [.{Scenario 2} ] 
+			\edge node{} ; [.{Scenario 3} ] 
+		] 
+	] 
+	\edge node{}; [.{Industry partners}   
+		\edge node{} ; [.{Personae 3} 
+			\edge node{} ; [.{Scenario 1} ] 
+			\edge node{} ; [.{Scenario 2} ] 
+			\edge node{} ; [.{Scenario 3} ] 
+		] 
+	]
+	]
 
+%\Tree[.{Most likely users of website}
+%\edge node[midway,left] {false}; [.{Current students}]
+%\edge node[midway,right] {true}; [.{Potential students}]
+%]
+	
+	\end{tikzpicture}
+\end{scaletikzpicturetowidth}
+\end{center}
+
+
+
+\pagebreak
+
+\subsection{Personae}
+\subsubsection{Persona1 (Current student)}
+\begin{itemize}
+	\item 21 years old
+	\item 2nd year CompScience student
+	\item Likes using command line for simplest stuff
+	\item Has blue long hair
+	\item In his spare time he writes javascript apps that noone besides him will ever use
+\end{itemize}
+
+\pagebreak
+\subsubsection{Persona2 (Potential student)}
+\begin{itemize}
+	\item 17 years old
+	\item She is good in math but would also like to do something social
+	\item Her friends are all very girly
+	\item She plays football
+	\item She spends her evenings on facebook
+\end{itemize}
+
+\pagebreak
+\subsubsection{Persona3 (Industry partners)}
+\begin{itemize}
+	\item Working at some big software company
+	\item Has already 20 years of professional experience
+	\item Wants to find out new ways of doing a task
+	\item Company can't afford own research
+\end{itemize}
+
+\pagebreak
 \subsection{Scenarios}

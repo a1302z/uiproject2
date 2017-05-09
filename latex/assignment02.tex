@@ -15,6 +15,23 @@
 \usepackage{tabularx}
 
 
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{environ}
+
+\makeatletter
+\newsavebox{\measure@tikzpicture}
+\NewEnviron{scaletikzpicturetowidth}[1]{%
+	\def\tikz@width{#1}%
+	\def\tikzscale{1}\begin{lrbox}{\measure@tikzpicture}%
+		\BODY
+	\end{lrbox}%
+	\pgfmathparse{#1/\wd\measure@tikzpicture}%
+	\edef\tikzscale{\pgfmathresult}%
+	\BODY
+}
+\makeatother
+
 
 \begin{document}
 \fontsize{80}{100}
